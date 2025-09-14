@@ -1,62 +1,50 @@
-````markdown
 # 🔍 Multi-Structure Search & Sort Engine (C++)
 
-A comprehensive C++ application that implements and benchmarks multiple **sorting** and **searching** algorithms with performance analysis.  
-Designed for learning, comparison, and experimentation in **Data Structures & Algorithms (DSA)**.
+A **C++17 application** implementing and benchmarking multiple **sorting** and **searching** algorithms with performance analysis.
+Designed for learning, experimentation, and comparison in **Data Structures & Algorithms (DSA)**.
 
 ---
 
 ## ✨ Features
-- ✅ 9 Sorting Algorithms:
-  - Merge Sort
-  - Quick Sort
-  - Heap Sort
-  - Insertion Sort
-  - Selection Sort
-  - Bubble Sort
-  - Shell Sort
-  - Counting Sort
-  - Radix Sort
 
-- ✅ 7 Searching Algorithms:
-  - Linear Search
-  - Binary Search
-  - Interpolation Search
-  - Exponential Search
-  - Jump Search
-  - Fibonacci Search
-  - Hash Search (optimized with `unordered_set`)
+### Sorting Algorithms (9)
 
-- ✅ Data Generators:
-  - Random integers
-  - Sorted integers
-  - Reverse sorted integers
-  - Nearly sorted integers
-  - Duplicate values
+* Merge, Quick, Heap, Insertion, Selection, Bubble, Shell, Counting, Radix
 
-- ✅ Performance Analyzer:
-  - Measures execution time in **microseconds (µs)**
-  - Validates correctness
-  - Generates detailed reports with success rates & average times
+### Searching Algorithms (7)
 
-- ✅ Interactive Menu:
-  - Run individual algorithms
-  - Compare all algorithms side by side
-  - Generate new datasets
-  - View performance results & reports
-  - Run comprehensive benchmarks
+* Linear, Binary, Interpolation, Exponential, Jump, Fibonacci, Hash (`unordered_set`)
+
+### Data Generators
+
+* Random, Sorted, Reverse Sorted, Nearly Sorted, Duplicate Values
+
+### Performance Analysis
+
+* Measures execution time in **microseconds (µs)**
+* Validates correctness of results
+* Generates detailed reports with success rates & averages
+
+### Interactive Menu
+
+* Run individual algorithms or compare all
+* Generate new datasets
+* View performance results and reports
+* Run full benchmark tests
 
 ---
 
 ## 🛠️ Installation & Usage
 
-### 1. Clone the Repository
+### 1. Clone
+
 ```bash
 git clone https://github.com/yourusername/SortingEngine.git
 cd SortingEngine
-````
+```
+
 ### 2. Compile
-Use `g++` or any C++17+ compiler:
+
 ```bash
 g++ -std=c++17 SortingEngine.cpp -o SortingEngine
 ```
@@ -69,11 +57,11 @@ g++ -std=c++17 SortingEngine.cpp -o SortingEngine
 
 ---
 
-## 📊 Sample Output
+## 📊 Sample Menu & Output
 
 ```
 ============================================================
-           MULTI-STRUCTURE SEARCH & SORT ENGINE - C++ (DSA)
+      MULTI-STRUCTURE SEARCH & SORT ENGINE - C++ (DSA)
 ============================================================
 Current Data Size: 1000 elements
 ------------------------------------------------------------
@@ -89,16 +77,15 @@ Current Data Size: 1000 elements
 ============================================================
 ```
 
-Performance results example:
+**Performance Example:**
 
 ```
-Algorithm                 Time (µs)       Success   Data Size
-----------------------------------------------------------------
-Merge Sort                1523            ✓         10000
-Quick Sort                987             ✓         10000
-Heap Sort                 1722            ✓         10000
-Bubble Sort               67219           ✓         10000
-============================================================
+Algorithm       Time (µs)   Success   Data Size
+-----------------------------------------------
+Merge Sort      1523        ✓         10000
+Quick Sort      987         ✓         10000
+Heap Sort       1722        ✓         10000
+Bubble Sort     67219       ✓         10000
 ```
 
 ---
@@ -106,28 +93,7 @@ Bubble Sort               67219           ✓         10000
 ## 📂 Project Structure
 
 ```
-SortingEngine.cpp    # Main source file with all algorithms and menu
-README.md            # Project documentation
+SortingEngine.cpp   # All algorithms & interactive menu
+README.md           # Documentation
 ```
-
----
-
-## 🚀 Future Improvements
-
-* Add **visualization support** for sorting steps
-* Export performance results to **CSV/JSON**
-* Add more search/sort variants (e.g., TimSort, B-tree search)
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License** – free to use, modify, and distribute.
-
----
-
-## 🙌 Acknowledgements
-
-* Built for practicing **Data Structures & Algorithms**
-* Uses C++17 STL for randomness, timing, and utilities
 
